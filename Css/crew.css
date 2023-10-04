@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    min-height: 100vh;
+}
+.crew-cont{
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    min-height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.crew{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.member{
+    background-color: whitesmoke;
+    width: 30%;
+    margin: 10px 20px;
+    /* color: white; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.member img{
+    width: 60%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.026);
+}

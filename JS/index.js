@@ -10,6 +10,8 @@ fetch('./JS/data.json')
 .then(data=>{
     // Input for the destination
     const destinations = data.destinations
+    const crew = data.crew;
+    console.log(crew)
     // for destination
     destinations.forEach(destination => {
         console.log(destination.images.png)
