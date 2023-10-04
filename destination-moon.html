@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Css/Index.css">
     <link rel="stylesheet" href="./Css/navbar.css">
+    <link rel="stylesheet" href="./Css/moon.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="moon-cont">
         <header>
             <img src="./assets/shared/logo.svg" alt="">
             <nav>
                 <ul class="navbar">
-                    <li class="active">00 HOME</li>
+                    <li class="active"><a href="./index.html">00 HOME</a></li>
                     <li class="dropdown-menu">01 DESTINATION
                         <ul class="drop-down drop">
-                            <li class="drop-list"><a href="./destination-moon.html">Moon</a></li>
+                            <li class="drop-list"><a href="#">Moon</a></li>
                             <li class="drop-list">Mars</li>
                             <li class="drop-list">Europa</li>
                             <li class="drop-list">Titan</li>
@@ -30,19 +30,16 @@
         </header>
         <main>
             <section class="text-section">
-                <h3>SO, YOU WANT TO TRAVEL TO</h3>
-                <h1>SPACE</h1>
-
-                <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience! Explore</p>
+                <h1 class="destination-header">Moon</h1>
+                <p class="destination-text"> 
+                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                </p>
             </section>
-            <section class="explore">
-                <div>
-                    <p>Explore</p>
-                </div>
+            <section class="img-section">
+                <img src="./assets/destination/image-moon.webp " alt="" class="destination-img">
             </section>
         </main>
     </div>
-    
 </body>
-<script type="module" src="./JS/index.js"></script> 
+<script type="module" src="./JS/index.js"></script>
 </html>

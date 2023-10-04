@@ -10,30 +10,10 @@ body{
 /* Homepage */
 
 .container{
-    background-image: url(../Assests/home/background-home-desktop.jpg);
+    background-image: url(../assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: inherit;
-}
-.container header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-.container header ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    background-color: rgb(128, 128, 128);
-    padding:0px 50px;
-}
-.container header li{
-    padding: 20px 30px;
-    color: white;
-}
-.container header .active{
-    border-bottom: 3px solid white;
 }
 
 /* Main */
@@ -59,7 +39,7 @@ main section div{
     background-color: white;
     border-radius: 60%;
     color: black;
-    width: 40%;
+    max-width: 250px;
     height:250px;
     display: flex;
     justify-content: center;
