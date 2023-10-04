@@ -12,6 +12,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+main h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
 .crew{
     padding: 20px;
     display: flex;
@@ -20,15 +25,23 @@ body{
 }
 .member{
     background-color: whitesmoke;
-    width: 30%;
+    width: 20%;
     margin: 10px 20px;
     /* color: white; */
+    box-shadow: 0 4px 8px 0 rgb(44, 27, 27);
     text-align: center;
-    padding: 10px;
+    padding: 0px 10px;
     border-radius: 10px;
 }
+.member .role{
+    color: grey;
+}
+.member p{
+    line-height: 20px;
+    padding: 0px 30px;
+}
 .member img{
-    width: 60%;
-    border-radius: 50%;
+    width: 30%;
+    /* border-radius: 50%; */
     background-color: rgba(255, 255, 255, 0.026);
 }

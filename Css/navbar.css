@@ -16,7 +16,7 @@ header .navbar{
     padding: 20px 30px;
     color: white;
 }
-.container header .active{
+.active{
     border-bottom: 3px solid white;
 }
 .dropdown-menu{
@@ -34,8 +34,15 @@ header .navbar{
 .drop-down li{
     color: black;
 }
+.drop-down li a{
+    color: black;
+}
 
 .dropdown-menu:hover .drop-down {
     display: flex;
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
