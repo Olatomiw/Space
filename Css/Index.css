@@ -18,7 +18,7 @@ body{
 
 /* Main */
 main{
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
 }
 
@@ -34,14 +34,54 @@ main section{
 .text-section h1{
     font-size: 32px;
     font-weight: bold;
+    font-stretch: expanded;
+    font-family: Arial, Helvetica, sans-serif;
 }
-main section div{
+.circle{
     background-color: white;
     border-radius: 60%;
     color: black;
-    max-width: 250px;
+    width: 250px;
     height:250px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:992px) {
+    main section{
+        padding-left: 100px;
+    }
+    .container{
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main section{
+        padding: 0px 30px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        min-height: 40vh;
+    }
+    .explore{
+        align-items: center;
+    }
+    .text-section{
+        letter-spacing: 2px;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        padding: 0px 50px;
+    }
+    .text-content{
+        width: 70%;
+        margin: 0 auto;
+    }
 }

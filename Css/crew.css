@@ -5,6 +5,7 @@ body{
     padding: 0%;
     margin: 0%;
     min-height: 100vh;
+    color: white;
 }
 .crew-cont{
     background-image: url(../assets/crew/background-crew-desktop.jpg);
@@ -12,36 +13,69 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-main h1{
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-}
 .crew{
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* height: 50vh; */
 }
 .member{
-    background-color: whitesmoke;
-    width: 20%;
+    display: flex;
+    height: 100%;
     margin: 10px 20px;
-    /* color: white; */
     box-shadow: 0 4px 8px 0 rgb(44, 27, 27);
     text-align: center;
     padding: 0px 10px;
     border-radius: 10px;
+}
+.member section{
+    width: 50%;
+}
+.crew-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
 }
 .member .role{
     color: grey;
 }
 .member p{
     line-height: 20px;
-    padding: 0px 30px;
+    /* padding: 0px 30px; */
 }
 .member img{
-    width: 30%;
+    width: 80% !important;
     /* border-radius: 50%; */
-    background-color: rgba(255, 255, 255, 0.026);
+}
+.dot-cont{
+    padding: 0 30px;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    margin: 0px 3px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.crew-img{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+    .member{
+        flex-direction: column-reverse ;
+        justify-content: center;
+        align-items: center;
+    }
+    .member section{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .member img{
+        margin: auto;
+    }
 }

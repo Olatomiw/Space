@@ -11,17 +11,16 @@
 <body>
     <div class="container">
         <header>
-            <img src="./assets/shared/logo.svg" alt="">
-            <nav>
-                <ul class="navbar">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/shared/logo.svg" alt="">
+                </div>
+                <a href="#" class="toggle-btn">
+                    <img src="./assets/shared/icon-hamburger.svg" alt="">
+                </a>
+                <ul class="nav-links">
                     <li class="active"><a href="#">00 HOME</a></li>
-                    <li class="dropdown-menu">01 DESTINATION
-                        <ul class="drop-down drop">
-                            <li class="drop-list"><a href="./destination-moon.html">Moon</a></li>
-                            <li class="drop-list">Mars</li>
-                            <li class="drop-list">Europa</li>
-                            <li class="drop-list">Titan</li>
-                        </ul>
+                    <li class="dropdown-menu"> <a href="./destination-moon.html">01 DESTINATION</a>
                     </li>
                     <li><a href="./crew.html">02 CREW</a></li>
                     <li><a href="./technology.html">03 TECHNOLOGY</a></li>
@@ -30,13 +29,15 @@
         </header>
         <main>
             <section class="text-section">
-                <h3>SO, YOU WANT TO TRAVEL TO</h3>
-                <h1>SPACE</h1>
+                <div class="text-content">
+                    <h3>SO, YOU WANT TO TRAVEL TO</h3>
+                    <h1>SPACE</h1>
 
-                <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience! Explore</p>
+                    <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience! Explore</p>
+                </div>
             </section>
             <section class="explore">
-                <div>
+                <div class="circle">
                     <p>Explore</p>
                 </div>
             </section>
@@ -45,4 +46,5 @@
     
 </body>
 <script type="module" src="./JS/index.js"></script> 
+<script type="module" src="./JS/navbar.js"></script>
 </html>

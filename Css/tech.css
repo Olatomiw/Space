@@ -33,3 +33,26 @@ body{
 .tech section img{
     width: 70%;
 }
+
+h1{
+    color: white;
+}
+
+@media screen and (max-width:750px) {
+    .tech{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech section{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .tech section{
+        width: 80%;
+    }
+    h1{
+        font-size: 25px;
+    }
+}

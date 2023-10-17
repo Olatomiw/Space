@@ -11,17 +11,16 @@
 <body>
     <div class="moon-cont">
         <header>
-            <img src="./assets/shared/logo.svg" alt="">
-            <nav>
-                <ul class="navbar">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/shared/logo.svg" alt="">
+                </div>
+                <a href="#" class="toggle-btn">
+                    <img src="./assets/shared/icon-hamburger.svg" alt="">
+                </a>
+                <ul class="nav-links">
                     <li><a href="./index.html">00 HOME</a></li>
-                    <li class="dropdown-menu active">01 DESTINATION
-                        <ul class="drop-down drop">
-                            <li class="drop-list"><a href="#">Moon</a></li>
-                            <li class="drop-list">Mars</li>
-                            <li class="drop-list">Europa</li>
-                            <li class="drop-list">Titan</li>
-                        </ul>
+                    <li class="active"> <a href="./destination-moon.html">01 DESTINATION</a>
                     </li>
                     <li><a href="./crew.html">02 CREW</a></li>
                     <li><a href="./technology.html">03 TECHNOLOGY</a></li>
@@ -29,17 +28,47 @@
             </nav>
         </header>
         <main>
-            <section class="text-section">
-                <h1 class="destination-header">Moon</h1>
-                <p class="destination-text"> 
-                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
-                </p>
-            </section>
-            <section class="img-section">
-                <img src="./assets/destination/image-moon.webp " alt="" class="destination-img">
-            </section>
+            <h1>01 PICK YOUR DESTINATION</h1>
+            <div class="content">
+                <section class="img-section">
+                    <div class="img-cont">
+                        <img src="./assets/destination/image-moon.webp " alt="" class="destination-img">
+                    </div>
+                </section>
+                <section class="text-section">
+                    <div class="planet">
+                        <ul class="drop-down drop">
+                            <li class="drop-list"><a href="#">Moon</a></li>
+                            <li class="drop-list">Mars</li>
+                            <li class="drop-list">Europa</li>
+                            <li class="drop-list">Titan</li>
+                        </ul>
+                    </div>
+                    <div class="text-cont">
+                        <h1 class="destination-header">Moon</h1>
+                        <p class="destination-text"> 
+                            See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                        </p>
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="params">
+                        <section class="distance">
+                            <h1>AVG DISTANCE</h1>
+                            <p>384,400 KM</p>
+                        </section>
+                        <section class="travel">
+                            <h3>EST.TRAVEL TIME</h3>
+                            <p>
+                                3 DAYS
+                            </p>
+                        </section>
+                    </div>
+                </section>
+            </div>
         </main>
     </div>
 </body>
 <script type="module" src="./JS/index.js"></script>
+<script type="module" src="./JS/navbar.js"></script>
 </html>

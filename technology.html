@@ -11,20 +11,19 @@
 <body>
     <div class="tech-section">
         <header>
-            <img src="./assets/shared/logo.svg" alt="">
-            <nav>
-                <ul class="navbar">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/shared/logo.svg" alt="">
+                </div>
+                <a href="#" class="toggle-btn">
+                    <img src="./assets/shared/icon-hamburger.svg" alt="">
+                </a>
+                <ul class="nav-links">
                     <li><a href="./index.html">00 HOME</a></li>
-                    <li class="dropdown-menu">01 DESTINATION
-                        <ul class="drop-down drop">
-                            <li class="drop-list"><a href="./destination-moon.html">Moon</a></li>
-                            <li class="drop-list">Mars</li>
-                            <li class="drop-list">Europa</li>
-                            <li class="drop-list">Titan</li>
-                        </ul>
+                    <li class="dropdown-menu"> <a href="./destination-moon.html">01 DESTINATION</a>
                     </li>
                     <li><a href="./crew.html">02 CREW</a></li>
-                    <li class="active">03 TECHNOLOGY</li>
+                    <li class="active"><a href="./technology.html">03 TECHNOLOGY</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,4 +36,5 @@
     </div>
 </body>
 <script type="module" src="./JS/tech.js"></script>
+<script type="module" src="./JS/navbar.js"></script>
 </html>

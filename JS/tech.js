@@ -18,3 +18,4 @@ fetch("./JS/data.json")
         `
     });
 })
+.catch(error=> console.log(error))
